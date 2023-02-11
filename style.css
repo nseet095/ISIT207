@@ -16,6 +16,27 @@
     padding: 10px;
     grid-gap: 50px;
 }
+.loc-box {
+    display: grid;
+    grid-template-columns: 1 1 1;
+    padding: 10px;
+    grid-gap: 50px;
+    place-items: center;
+    place-content: center;
+    place-self: center;
+}
+.locations {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.loc-box > ul {
+    list-style-type: none; 
+    text-decoration: none;
+}
 
 .box {
     background-color: rgba(255, 255, 255, 0.8);
@@ -153,6 +174,6 @@ li.active {
     margin-top: 100px;
 } */
 
-h1.title {
+.title {
     text-align: center;
 }
