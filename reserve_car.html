@@ -22,7 +22,7 @@
     </header>
 
     <div class="maincontainer">
-        <div id="reserve_form">
+        <div id="form">
             <form id="reserve_car">
                 <label for="location">Pick up location:</label><br>
                 <select id="location" name="location">
@@ -35,32 +35,35 @@
                     <option value="Ioniq5">Hyundai Ioniq 5</option>
                     <option value="Tesla3">Tesla Model 3</option>
                 </select><br>
-                <input type="radio" id="rent_daily" name="rent_duration" value="daily" onclick="changeCarPrice()">
+                <label for="rent_duration">Rent Duration: </label>
+                <input type="radio" id="rent_duration" name="rent_duration" value="day" onclick="changeCarPrice()">
                 <label for="rent_daily">Daily</label>
-                <input type="radio" id="rent_weekly" name="rent_duration" value="weekly" onclick="changeCarPrice()">
+                <input type="radio" id="rent_duration" name="rent_duration" value="week" onclick="changeCarPrice()">
                 <label for="rent_weekly">Weekly</label>
-                <input type="radio" id="rent_monthly" name="rent_duration" value="monthly" onclick="changeCarPrice()">
-                <label for="rent_monthly">Monthly</label>
-                <div>Payable</div>
-                <div id="price"></div>
+                <input type="radio" id="rent_duration" name="rent_duration" value="month" onclick="changeCarPrice()">
+                <label for="rent_monthly">Monthly</label><br>
+                <label for="pickup_date">Date of Pick Up:</label>
+                <input type="date" id="pickup_date" name="pickup_date" max="2040-12-31"><br>
 
-                <p>Credit Card Details</p>
+
+                <h3>Payable</h3>
+                <div id="price">$0</div><br>
+
+                <h3>Credit Card Details</h3>
                 <label for="credit_card_name">Card Holder Name</label><br>
                 <input type="text" id="name" name="name"><br><br>
                 <label for="cc_num">Credit Card Number</label><br>
                 <input type="text" id="cc_num" name="cc_num"><br><br>
                 <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv"><br><br>
-
-                <label for="cc_num">Credit Card Number</label><br>
-                <input type="text" id="cc_num" name="cc_num"><br><br>
+                <input type="text" id="cvv" name="cvv"><br>
+                <label for="expiry">Expiry Date</label>
                 <input type="date" id="expiry" name="expiry" max="2040-12-31"><br>
                 <input type="submit">
             </form>
         </div>
         <div id="details"></div>
     </div>
-    <script src="reserve.js"></script>
+    <script src="js/reserve.js"></script>
 
 </body>
 

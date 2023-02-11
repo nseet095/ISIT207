@@ -13,39 +13,26 @@
 
         <header class="header">
             <nav>
-                <a href = "index.html"><img class="logo" src="images/logo.png"></a>
+                <a href="index.html"><img class="logo" src="images/logo.png"></a>
                 <ul>
-                    <li class = "nav"> <a href="index.html">Home</a></li>
-                    <li class = "nav"> <a href="reserve_car.html">Reserve Car</a> </li>
-                    <li class = "nav active"> <a href="pick_up.html">Pick Up Car</a></li>
-                    <li class = "nav"> <a href="return_car.html">Return Car</a> </li>
+                    <li class="nav"> <a href="index.html">Home</a></li>
+                    <li class="nav"> <a href="reserve_car.html">Reserve Car</a> </li>
+                    <li class="nav active"> <a href="pick_up.html">Pick Up Car</a></li>
+                    <li class="nav"> <a href="return_car.html">Return Car</a> </li>
                 </ul>
             </nav>
         </header>
-
-        <!-- <div class="maincontainer">
-
-
-            <aside class="aside">
-                <p>Aside</p>
-            </aside>
-
-            <div class="sidebar">
-                <p>Sidebar</p>
+        <div class="maincontainer">
+            <div id="form">
+                <form id="reserve_car">
+                    <label for="car_num">Car Plate Number: </label><br>
+                    <div id="msg"></div>
+                    <input type="text" id="car_num" name="car_num"><br><br>
+                    <input type="submit">
+                </form>
             </div>
-
-            <main class="main">
-                <p>Main</p>
-            </main>
-
-            <footer class="footer">
-                <p>Footer</p>
-            </footer>
-
         </div>
-    </div> -->
-
-
+        <script src="js/pick-up.js"></script>
 </body>
 
 </html>
