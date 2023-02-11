@@ -42,7 +42,7 @@ car.return_by.getHours() + ":" + car.return_by.getMinutes();
         textBox.value = "";
         textBox.style.backgroundColor = "#ffffff";
         message.className = "success";
-        message.innerHTML = `${car.long_name} retrievecar.return_by. Please return the car by: ${datestring}hrs.`
+        message.innerHTML = `${car.long_name} retrieve. Please return the car by: ${datestring}hrs.`
 
     }
 
